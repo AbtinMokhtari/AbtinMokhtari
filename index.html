@@ -1,59 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abtin Mokhtari | Web Designer & FiveM Developer</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#061711" />
+  <meta name="description" content="پورتفولیوی آبتین مختاری؛ طراح وب و توسعه‌دهنده سرورهای FiveM" />
+  <title>آبتین مختاری | طراح وب و توسعه‌دهنده FiveM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="صفحه اصلی"><span class="brand-mark">AM</span><span><b>Abtin Mokhtari</b><small>Web Designer &amp; FiveM Developer</small></span></a>
+    <button class="menu-toggle" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="منوی اصلی">
+      <a class="active" href="#home">خانه</a><a href="#about">درباره من</a><a href="#skills">مهارت‌ها</a><a href="#projects">نمونه‌کارها</a><a href="#contact">تماس با من</a>
+    </nav>
+    <a class="button button-primary nav-cta" href="#contact">ارتباط با من <span>➤</span></a>
+  </header>
 
-<header>
-<div class="logo">AM <span>Abtin Mokhtari</span></div>
-<nav>
-<a>خانه</a><a>درباره من</a><a>مهارت‌ها</a><a>نمونه‌کارها</a><a>تماس</a>
-</nav>
-<a class="btn" href="https://t.me/MrAbtinMokhtari">ارتباط با من</a>
-</header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div><div class="hero-glow"></div>
+      <div class="hero-copy">
+        <span class="welcome">👋 سلام، خوش اومدید</span>
+        <h1>Abtin <em>Mokhtari</em></h1>
+        <h2>طراح سایت و <strong>توسعه‌دهنده</strong> سرورهای FiveM</h2>
+        <p>من آبتین مختاری هستم؛ طراح وب و توسعه‌دهنده سرورهای FiveM با تمرکز بر طراحی مدرن و توسعه حرفه‌ای.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">نمونه‌کارها <span>↗</span></a><a class="button button-outline" href="#contact">➤ &nbsp; ارتباط با من</a></div>
+        <div class="stats"><div><b>3+</b><span>سال تجربه</span></div><div><b>20+</b><span>پروژه انجام‌شده</span></div><div><b>100%</b><span>رضایت مشتریان</span></div></div>
+      </div>
+      <div class="hero-visual" aria-label="جایگاه تصویر پروفایل"><div class="portrait-halo"></div><div class="portrait"><span>AM</span><small>YOUR PHOTO</small></div><div class="code-window"><div class="window-dots">● ● ●</div><code>&lt; Build<br> &nbsp; Design<br> &nbsp; Play<br> &nbsp; Repeat /&gt;</code></div><div class="floating-note">🎮 &nbsp; توسعه‌دهنده FiveM<br><small>تجربه بهتر برای دنیای گیم</small></div></div>
+      <a class="scroll-cue" href="#about">↓ <span>اسکرول کنید</span></a>
+    </section>
 
-<section class="hero reveal">
-<div>
-<h1>Abtin <b>Mokhtari</b></h1>
-<h2>طراح سایت و دولوپر سرورهای FiveM</h2>
-<p>طراحی سایت‌های مدرن، رابط کاربری و توسعه سرورهای اختصاصی FiveM.</p>
-<a class="btn" href="#projects">نمونه‌کارها</a>
-</div>
-<div class="visual">CODE<br>BUILD<br>CREATE</div>
-</section>
+    <section class="section services" id="about">
+      <div class="section-heading"><span class="eyebrow">SERVICES</span><h2>درباره من و خدماتم</h2><p>راه‌حل‌های حرفه‌ای برای نیازهای دیجیتال شما</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon orange">A</div><h3>توسعه سرور FiveM</h3><p>طراحی و توسعه سرورهای حرفه‌ای FiveM با اسکریپت‌های اختصاصی و پیاده‌سازی کامل.</p><a href="#contact" aria-label="اطلاعات بیشتر درباره توسعه FiveM">↗</a></article>
+        <article class="service-card"><div class="service-icon">▤</div><h3>بک‌اند</h3><p>طراحی و توسعه API و سیستم‌های بک‌اند قدرتمند، امن و مقیاس‌پذیر.</p><a href="#contact" aria-label="اطلاعات بیشتر درباره بک اند">↗</a></article>
+        <article class="service-card"><div class="service-icon">&lt;/&gt;</div><h3>توسعه فرانت‌اند</h3><p>پیاده‌سازی رابط‌های کاربری مدرن و واکنش‌گرا با تکنولوژی‌های روز دنیا.</p><a href="#contact" aria-label="اطلاعات بیشتر درباره فرانت اند">↗</a></article>
+        <article class="service-card"><div class="service-icon">▱</div><h3>طراحی سایت</h3><p>طراحی وب‌سایت‌های مدرن، سریع و حرفه‌ای متناسب با نیاز کسب‌وکار شما.</p><a href="#contact" aria-label="اطلاعات بیشتر درباره طراحی سایت">↗</a></article>
+      </div>
+    </section>
 
-<section class="section reveal">
-<h2>درباره من</h2>
-<p>من ابتین مختاری هستم، طراح وب و توسعه‌دهنده سرورهای گیم با تمرکز روی پروژه‌های مدرن.</p>
-</section>
+    <section class="section skills" id="skills">
+      <div class="section-heading"><span class="eyebrow">SKILLS</span><h2>مهارت‌ها و تخصص‌ها</h2><p>مسلط به HTML، CSS، JavaScript، Python و توسعه سرورهای FiveM</p></div>
+      <div class="skill-grid">
+        <div class="skill"><span class="skill-logo html">5</span><b>HTML</b><div class="bar"><i style="width:95%"></i></div><small>95%</small></div>
+        <div class="skill"><span class="skill-logo css">3</span><b>CSS</b><div class="bar"><i style="width:90%"></i></div><small>90%</small></div>
+        <div class="skill"><span class="skill-logo js">JS</span><b>JavaScript</b><div class="bar"><i style="width:90%"></i></div><small>90%</small></div>
+        <div class="skill"><span class="skill-logo py">🐍</span><b>Python</b><div class="bar"><i style="width:85%"></i></div><small>85%</small></div>
+        <div class="skill"><span class="skill-logo lua">Lua</span><b>Lua</b><div class="bar"><i style="width:80%"></i></div><small>80%</small></div>
+        <div class="skill"><span class="skill-logo php">php</span><b>PHP</b><div class="bar"><i style="width:80%"></i></div><small>80%</small></div>
+        <div class="skill"><span class="skill-logo fivem">A</span><b>FiveM</b><div class="bar"><i style="width:90%"></i></div><small>90%</small></div>
+        <div class="skill"><span class="skill-logo ux">🎨</span><b>UI/UX</b><div class="bar"><i style="width:85%"></i></div><small>85%</small></div>
+      </div>
+    </section>
 
-<section class="section reveal">
-<h2>مهارت‌ها</h2>
-<div class="skills">
-<span>HTML 95%</span><span>CSS 90%</span><span>JavaScript 90%</span>
-<span>Python 85%</span><span>Lua 80%</span><span>PHP 80%</span>
-<span>FiveM 90%</span><span>UI/UX 85%</span>
-</div>
-</section>
+    <section class="section projects" id="projects">
+      <div class="section-heading"><span class="eyebrow">PORTFOLIO</span><h2>نمونه‌کارها</h2><p>بخشی از پروژه‌هایی که با عشق و تمرکز روی آن‌ها کار کردم</p></div>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-preview preview-company"><div class="mock-nav"><b>BrandX</b><span>صفحه اصلی　 خدمات　 درباره ما</span></div><div class="mock-content"><strong>راهکارهای دیجیتال<br>برای رشد کسب‌وکار شما</strong><span>طراحی مدرن، تجربه‌ای متفاوت</span><div class="mock-buttons">شروع کنید　 بیشتر بدانید</div></div></div><div class="project-info"><h3>وب‌سایت شرکتی <a href="#contact" aria-label="جزئیات پروژه وب سایت شرکتی">↗</a></h3><p>طراحی یک وب‌سایت مدرن و حرفه‌ای برای معرفی خدمات و افزایش اعتبار برند.</p><div class="tags"><span>طراحی مدرن</span><span>واکنش‌گرا</span><span>بهینه‌سازی</span></div></div></article>
+        <article class="project-card"><div class="project-preview preview-shop"><div class="mock-nav"><b>Shopino</b><span>محصولات　 دسته‌بندی　 سبد خرید</span></div><div class="shop-title">استایل بهتر<br>زندگی بهتر</div><div class="shop-products"><i>👕</i><i>🧥</i><i>👟</i><i>👜</i></div></div><div class="project-info"><h3>فروشگاه آنلاین <a href="#contact" aria-label="جزئیات پروژه فروشگاه آنلاین">↗</a></h3><p>طراحی و توسعه فروشگاه اینترنتی با امکانات کامل و تجربه کاربری عالی.</p><div class="tags"><span>طراحی مدرن</span><span>پنل مدیریت</span><span>پرداخت آنلاین</span></div></div></article>
+        <article class="project-card"><div class="project-preview preview-game"><div class="game-sidebar">▣<br>▤<br>⚙</div><div class="game-screen"><b>VOID<br>ROLEPLAY</b><span>SERVER MANAGEMENT</span><div class="game-panels"><i>Players<br><strong>128</strong></i><i>Resources<br><strong>Active</strong></i></div></div></div><div class="project-info"><h3>پنل مدیریت FiveM <a href="#contact" aria-label="جزئیات پروژه پنل مدیریت FiveM">↗</a></h3><p>طراحی پنل مدیریت حرفه‌ای برای سرور FiveM با امکانات مدیریتی و رابط کاربری مدرن.</p><div class="tags"><span>مدیریت کاربران</span><span>اسکریپت اختصاصی</span><span>طراحی مدرن</span></div></div></article>
+      </div>
+    </section>
 
-<section id="projects" class="section reveal">
-<h2>نمونه‌کارها</h2>
-<div class="cards">
-<div class="card">وبسایت شرکتی</div>
-<div class="card">فروشگاه آنلاین</div>
-<div class="card">پنل مدیریت FiveM</div>
-</div>
-</section>
-
-<section class="contact reveal">
-<h2>تماس با من</h2>
-<p>Telegram: @MrAbtinMokhtari</p>
-</section>
-
-<script src="script.js"></script>
+    <section class="section contact" id="contact"><div class="contact-copy"><span class="eyebrow">CONTACT</span><h2>تماس با من</h2><p>برای همکاری، سفارش پروژه یا مشاوره از طریق تلگرام یا ایمیل با من در ارتباط باشید.</p><a class="telegram" href="https://t.me/MrAbtinMokhtari" target="_blank" rel="noopener">➤ &nbsp; @MrAbtinMokhtari <span>↗</span></a><div class="contact-chips"><span>✧ تضمین کیفیت</span><span>♡ همکاری بلندمدت</span><span>◉ مشاوره رایگان</span><span>⚡ پاسخگویی سریع</span></div></div><div class="telegram-art">➤</div></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">AM</span><span><b>Abtin Mokhtari</b><small>Web Designer &amp; FiveM Developer</small></span></a><nav><a href="#home">خانه</a><a href="#about">درباره من</a><a href="#skills">مهارت‌ها</a><a href="#projects">نمونه‌کارها</a><a href="#contact">تماس با من</a></nav><div class="socials"><a href="https://t.me/MrAbtinMokhtari" aria-label="تلگرام">➤</a><a href="#" aria-label="دیسکورد">◉</a><a href="#" aria-label="گیت‌هاب">⌘</a><a href="#" aria-label="اینستاگرام">◎</a></div><p>© 2024 Abtin Mokhtari | تمامی حقوق محفوظ است. با عشق برای دنیای بهتر ساخته شده است.</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>
