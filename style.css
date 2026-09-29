@@ -1,1 +1,33 @@
-*{box-sizing:border-box}body{margin:0;background:#02150d;color:white;font-family:tahoma,Arial;line-height:2}header,section{max-width:1100px;margin:30px auto;padding:35px;border:1px solid #00ff99;border-radius:25px;background:#06251a;box-shadow:0 0 25px #00ff9955}h1,h2{color:#00ff99}a{background:#00ff99;color:#001b10;padding:12px 25px;border-radius:30px;text-decoration:none;display:inline-block}img{width:48%;margin:1%;border-radius:20px;border:1px solid #00ff99}.skills{font-size:20px;color:#00ff99}footer{text-align:center;padding:30px}
+body{
+margin:0;
+font-family:tahoma;
+background:#00150d;
+color:white;
+}
+.hero,.box{
+max-width:900px;
+margin:40px auto;
+padding:40px;
+border:1px solid #00ff99;
+border-radius:25px;
+background:#002719;
+box-shadow:0 0 30px #00ff9955;
+}
+h1,h2{color:#00ff99}
+a{
+display:inline-block;
+padding:15px 25px;
+background:#00ff99;
+color:#002719;
+border-radius:30px;
+text-decoration:none;
+}
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+.show{
+opacity:1;
+transform:none;
+}
