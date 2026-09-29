@@ -1,9 +1,9 @@
-const boxes=document.querySelectorAll('.reveal');
-function animate(){
-boxes.forEach(box=>{
-if(box.getBoundingClientRect().top < innerHeight-50)
-box.classList.add('show');
+
+const items=document.querySelectorAll('.reveal');
+function reveal(){
+items.forEach(x=>{
+if(x.getBoundingClientRect().top < innerHeight-80)x.classList.add('show');
 });
 }
-addEventListener('scroll',animate);
-animate();
+addEventListener('scroll',reveal);
+reveal();

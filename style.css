@@ -1,33 +1,19 @@
-body{
-margin:0;
-font-family:tahoma;
-background:#00150d;
-color:white;
-}
-.hero,.box{
-max-width:900px;
-margin:40px auto;
-padding:40px;
-border:1px solid #00ff99;
-border-radius:25px;
-background:#002719;
-box-shadow:0 0 30px #00ff9955;
-}
-h1,h2{color:#00ff99}
-a{
-display:inline-block;
-padding:15px 25px;
-background:#00ff99;
-color:#002719;
-border-radius:30px;
-text-decoration:none;
-}
-.reveal{
-opacity:0;
-transform:translateY(40px);
-transition:1s;
-}
-.show{
-opacity:1;
-transform:none;
-}
+
+*{box-sizing:border-box}
+body{margin:0;background:#00150d;color:#fff;font-family:tahoma;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle,#00ff9955,transparent 40%);z-index:-1;animation:glow 5s infinite}
+header{display:flex;justify-content:space-around;align-items:center;padding:20px;border-bottom:1px solid #00ff9955}
+.logo{font-size:30px;color:#00ff99;font-weight:bold}
+.logo span{font-size:16px;color:white}
+nav a{margin:10px;color:white;text-decoration:none}
+.btn{background:#00ff99;color:#002719;padding:14px 25px;border-radius:30px;text-decoration:none}
+.hero,.section,.contact{max-width:1200px;margin:40px auto;padding:50px;border-radius:30px;background:#002719aa;border:1px solid #00ff99;box-shadow:0 0 35px #00ff9933}
+.hero{display:flex;justify-content:space-between;align-items:center}
+h1{font-size:70px}b,h2{color:#00ff99}
+.visual{font-size:40px;color:#00ff99;line-height:1.5}
+.skills,.cards{display:flex;gap:20px;flex-wrap:wrap}
+.skills span,.card{padding:25px;border:1px solid #00ff99;border-radius:20px;background:#001f13;transition:.4s}
+.skills span:hover,.card:hover{transform:translateY(-10px);box-shadow:0 0 25px #00ff99}
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.show{opacity:1;transform:none}
+@keyframes glow{50%{filter:brightness(1.5)}}
